@@ -17,3 +17,21 @@ mv *.inn inn
 mv *.nex nex
 mv *.parm parm
 mv *.tree tree
+
+#####
+# 2.3
+#####
+
+# Note: the files for some reason had Mac style line endings.
+# I needed to re-save them with Unix style line endings for grep to work properly
+
+# first create a file for appending results to
+touch grep_results.txt
+# iterate over all .nex files
+for file in *.nex
+do
+    # the -A <number> option selects the matching line and the N lines following (in this case, the DIMENSIONS line)
+    grep -A 1 TITLE $file >> grep_results.txt
+    # add a newline in between separate greps, for neatness
+    printf "\n" >> grep_results.txt
+done
