@@ -48,5 +48,5 @@ grep 5000 *.parm | awk '{ print $2 }' > likelihoods.txt
 # 2.5
 #####
 
-# finds all files with .txt extension, up to three directories deep
+# finds all files with .txt extension, up to three directories deep starting from the home directory
 find ~ -name "*.txt" -maxdepth 3
