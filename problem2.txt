@@ -1,0 +1,19 @@
+#####
+# 2.1
+#####
+
+# make separate directories for each type of file
+mkdir inn
+mkdir nex
+mkdir parm
+mkdir tree
+
+#####
+# 2.2
+#####
+
+# move the different types of files to their respective directories
+mv *.inn inn
+mv *.nex nex
+mv *.parm parm
+mv *.tree tree
