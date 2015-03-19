@@ -1,0 +1,2 @@
+/Users/sukli/.subversion/README.txt
+/Users/sukli/.Trash/grep_results.txt
