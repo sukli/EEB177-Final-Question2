@@ -43,3 +43,10 @@ done
 # first grab lines starting with 5000 then use awk to print the likelihood column
 # finally, redirect to file
 grep 5000 *.parm | awk '{ print $2 }' > likelihoods.txt
+
+#####
+# 2.5
+#####
+
+# finds all files with .txt extension, up to three directories deep
+find ~ -name "*.txt" -maxdepth 3
