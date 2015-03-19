@@ -35,3 +35,11 @@ do
     # add a newline in between separate greps, for neatness
     printf "\n" >> grep_results.txt
 done
+
+#####
+# 2.4
+#####
+
+# first grab lines starting with 5000 then use awk to print the likelihood column
+# finally, redirect to file
+grep 5000 *.parm | awk '{ print $2 }' > likelihoods.txt
